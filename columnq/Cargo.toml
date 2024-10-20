@@ -47,9 +47,8 @@ hyper-rustls = { version = "0.27", default-features = false, optional = true }
 
 object_store = { version = "0.11", features = ["aws", "gcp", "azure"] }
 tokio-postgres = { version = "0.7.12", optional = true }
-deltalake = { version = "0.20", features = [
+deltalake = { version = "0.21", git = "https://github.com/ion-elgreco/delta-rs", branch = "chore/bump_kernel", features = [
     "datafusion",
-    "datafusion-ext",
     "s3",
     "gcs",
     "azure",
